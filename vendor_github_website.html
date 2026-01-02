@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Vendor Store</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; font-family:'Poppins', sans-serif; }
+  body { background:#f9f9f9; color:#111; line-height:1.6; }
+
+  /* Header */
+  header { background:#111; color:#fff; padding:20px; text-align:center; font-size:28px; font-weight:700; }
+  nav { margin-top:10px; }
+  nav a { color:#fff; text-decoration:none; margin:0 15px; font-weight:500; }
+  nav a:hover { color:#00ff99; }
+
+  /* Hero Section */
+  .hero { background:#222; color:#fff; text-align:center; padding:80px 20px; }
+  .hero h1 { font-size:42px; margin-bottom:20px; }
+  .hero p { font-size:20px; margin-bottom:30px; }
+  .btn-primary { background:#00ff99; color:#111; padding:15px 25px; font-size:18px; border:none; border-radius:8px; cursor:pointer; text-decoration:none; font-weight:600; }
+  .btn-primary:hover { background:#00cc77; }
+
+  /* Products Section */
+  .products { max-width:1200px; margin:50px auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; padding:0 20px; }
+  .product-card { background:#fff; border-radius:10px; padding:20px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.1); transition:0.3s; }
+  .product-card:hover { transform:translateY(-5px); }
+  .product-card img { max-width:100%; border-radius:8px; margin-bottom:15px; }
+  .product-card h3 { margin-bottom:10px; color:#111; }
+  .product-card p { color:#555; margin-bottom:15px; }
+  .product-card .btn-secondary { background:#111; color:#fff; padding:10px 20px; border:none; border-radius:6px; cursor:pointer; text-decoration:none; }
+  .product-card .btn-secondary:hover { background:#222; }
+
+  /* FAQ Section */
+  .faq { max-width:900px; margin:50px auto; padding:0 20px; }
+  .faq h2 { text-align:center; font-size:32px; margin-bottom:30px; }
+  .faq-item { background:#fff; padding:20px; margin-bottom:15px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.05); }
+  .faq-item h3 { margin-bottom:10px; font-size:18px; color:#111; }
+  .faq-item p { color:#555; }
+
+  /* Footer */
+  footer { background:#111; color:#888; text-align:center; padding:30px 20px; margin-top:50px; }
+
+  @media(max-width:600px){
+    .hero h1 { font-size:32px; }
+    .hero p { font-size:16px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  Your Vendor Store
+  <nav>
+    <a href="#products">Products</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Get the Best Vendor Access</h1>
+  <p>Premium suppliers for all your needs. DM to get instant access.</p>
+  <a href="#contact" class="btn-primary">Get Access Now</a>
+</section>
+
+<section id="products" class="products">
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Vendor+1" alt="Vendor 1">
+    <h3>All-in-One Bundle</h3>
+    <p>Includes multiple suppliers. DM for price.</p>
+    <a href="#contact" class="btn-secondary">DM to Buy</a>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Vendor+2" alt="Vendor 2">
+    <h3>Electronics Vendors</h3>
+    <p>Premium electronics suppliers. DM for price.</p>
+    <a href="#contact" class="btn-secondary">DM to Buy</a>
+  </div>
+  <div class="product-card">
+    <img src="https://via.placeholder.com/300x200?text=Vendor+3" alt="Vendor 3">
+    <h3>Clothing Vendors</h3>
+    <p>Top clothing suppliers. DM for price.</p>
+    <a href="#contact" class="btn-secondary">DM to Buy</a>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <h3>How do I buy?</h3>
+    <p>DM us on Discord or Telegram to get instant access to any vendor bundle.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Are refunds available?</h3>
+    <p>No refunds are offered. Make sure to read the product details before purchasing.</p>
+  </div>
+  <div class="faq-item">
+    <h3>Do you offer bulk deals?</h3>
+    <p>Yes! Contact us directly to discuss bulk pricing.</p>
+  </div>
+</section>
+
+<section id="contact" class="faq">
+  <h2>Contact</h2>
+  <div class="faq-item">
+    <h3>Discord</h3>
+    <p>yourdiscord#1234</p>
+  </div>
+  <div class="faq-item">
+    <h3>Telegram</h3>
+    <p>@yourtelegram</p>
+  </div>
+  <div class="faq-item">
+    <h3>Email</h3>
+    <p>youremail@example.com</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Your Vendor Store. All rights reserved.
+</footer>
+
+</body>
+</html>
